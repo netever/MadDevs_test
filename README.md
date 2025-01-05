@@ -113,7 +113,7 @@ docker run html-fragmenter
 
 ## Зависимости
 
-- Python ≥ 3.8
+- Python ≥ 3.11
 - beautifulsoup4: для парсинга HTML
 - click: для работы с CLI
 - lxml: быстрый парсер HTML
