@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./input:/app/input
+      - ./src:/app/src
+      - ./tests:/app/tests
+    environment:
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+    command: poetry run python src/main.py --max-len=4096 input/source.html

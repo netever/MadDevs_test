@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "html-fragmenter"
+version = "0.1.0"
+description = "Tool for splitting HTML messages into valid fragments"
+authors = ["Vladimir <vovaburtsev98@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.0"
+click = "^8.1.0"
+lxml = "^4.9.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+black = "^23.9.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+mypy = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+html-split = "main:main"
